@@ -1,9 +1,14 @@
-<div class="instagram-thumbnails">
-  <% @recent_media.each do |media_item| %>
-    <div>
-      <a href="<%= media_item.link %>">
-        <img src="<%= media_item.images.thumbnail.url %>" alt="">
-      </a>
-    </div>
-  <% end %>
-</div>
+<% if @recent_media %>
+
+  <div class="instagram-thumbnails">
+    <% @recent_media.each do |media_item| %>
+      <div>
+        <a href="<%= media_item.link %>">
+          <img src="<%= media_item.images.thumbnail.url %>" alt="">
+        </a>
+      </div>
+    <% end %>
+  </div>
+
+<% end %>
+

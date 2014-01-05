@@ -10,8 +10,3 @@ get '/' do
   @recent_media = Instagram.user_recent_media(count: 25)
   erb :index
 end
-
-get '/:path' do
-  @path = params[:path]
-  erb :index
-end
