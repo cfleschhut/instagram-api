@@ -1,3 +1,15 @@
 body {
+  margin: 0;
+  padding: 0;
   font: 100%/1.5 "Helvetica Neue", sans-serif;
+}
+
+/* Instagram Pics */
+
+.instagram-thumbnails div {
+  float: left;
+}
+.instagram-thumbnails img {
+  display: block;
+  margin: 10px 0 0 10px;
 }
