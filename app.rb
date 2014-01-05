@@ -1,5 +1,11 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World!"
+  @path = "index"
+  erb :index
+end
+
+get '/:path' do
+  @path = params[:path]
+  erb :index
 end
